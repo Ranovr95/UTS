@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Beranda</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="Logo.png" alt="Logo Perusahaan" />
+      <h1>Rakpop</h1>
+    </header>
+    <nav>
+      <a href="#" onclick="loginPrompt()">Home</a>
+      <a href="#" onclick="loginPrompt()">About</a>
+      <a href="#" onclick="loginPrompt()">Galeri</a>
+    </nav>
+    <main>
+      <h2>Selamat Datang di Rakpop</h2>
+      <p>Klik salah satu menu di atas untuk melanjutkan.</p>
+    </main>
+    <footer>
+      <p>Alamat: Jl.SoulSelatan | Email: Rakpop@gmail.com</p>
+    </footer>
+    <script>
+      function loginPrompt() {
+        const user = prompt("Masukkan username:");
+        const pass = prompt("Masukkan password:");
+        if (user === "admin" && pass === "123") {
+          window.location.href = "home.html";
+        } else {
+          alert("Login gagal. Username atau password salah.");
+        }
+      }
+    </script>
+  </body>
+</html>
